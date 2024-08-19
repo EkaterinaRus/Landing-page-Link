@@ -48,13 +48,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    gap: 10px;
     width: 100%;
     max-width: 185px;
     margin-inline: auto;
   }
 
   &__pagination {
+    text-align: center;
     flex: 1;
   }
 
