@@ -1,0 +1,47 @@
+<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+  <header class="mobile-overlay__header">
+    <a href="/" class="mobile-overlay__logo logo">
+      <img class="logo__image" src="./img/svgicons/logo.svg" alt="Link" width="153" height="48" loading="lazy" />
+    </a>
+    <button class="header__button button btn-sm button--transparent openModalLogin" type="button">Войти</button>
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button class="mobile-overlay__close-button cross-button" type="submit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.6365 5.6364C19.988 5.28493 19.988 4.71508 19.6365 4.36361C19.285 4.01214 18.7152 4.01214 18.3637 
+			4.36361L12.0001 10.7272L5.63649 4.36361C5.28502 4.01214 4.71517 4.01214 4.3637 4.36361C4.01223 4.71508 
+			4.01223 5.28493 4.3637 5.6364L10.7273 12L4.3637 18.3636C4.01223 18.7151 4.01223 19.2849 4.3637 19.6364C4.71517 
+			19.9879 5.28502 19.9879 5.63649 19.6364L12.0001 13.2728L18.3637 19.6364C18.7152 19.9879 19.285 19.9879 19.6365 
+			19.6364C19.988 19.2849 19.988 18.7151 19.6365 18.3636L13.2729 12L19.6365 5.6364Z"
+            fill="white"
+          />
+        </svg>
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+    </form>
+  </header>
+
+  <div class="mobile-overlay__body">
+    <ul class="mobile-overlay__menu-list">
+      <li class="mobile-overlay__menu-item">
+        <a class="mobile-overlay__menu-link" href="#features">Преимущества</a>
+      </li>
+      <li class="mobile-overlay__menu-item">
+        <a class="mobile-overlay__menu-link" href="#product">Продукт</a>
+      </li>
+      <li class="mobile-overlay__menu-item">
+        <a class="mobile-overlay__menu-link" href="#gallery">Галерея</a>
+      </li>
+      <li class="mobile-overlay__menu-item">
+        <a class="mobile-overlay__menu-link" href="#partners">Партнеры</a>
+      </li>
+      <li class="mobile-overlay__menu-item">
+        <a class="mobile-overlay__menu-link" href="#reviews">Отзывы</a>
+      </li>
+    </ul>
+	  <div class="mobile-overlay__socials-list">
+		  @@include('socials-list.html')
+	  </div>
+    <a class="mobile-overlay__button button" href="#cta">Попробовать бесплатно</a>
+  </div>
+</dialog>

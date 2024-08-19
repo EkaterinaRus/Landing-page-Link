@@ -1,0 +1,40 @@
+.features {
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1176px;
+  padding-top: 64px;
+  gap: 40px;
+
+  @include mobile {
+    padding-top: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  &__image {
+    @include mobile {
+      width: 343px;
+      height: 347px;
+    }
+  }
+
+  &__list {
+    max-width: 336px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include mobile {
+      max-width: 100%;
+      gap: 32px;
+    }
+  }
+
+  &__item {
+    
+  }
+
+}

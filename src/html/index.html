@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Link</title>
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	@@include('blocks/header.html')
+	<main class="contant">
+
+		<section class="section">
+			<div class="section__inner section__inner--hero">
+				@@include('blocks/hero.html')
+			</div>
+		</section>
+
+		<section class="section" id="features">
+			<div class="section__inner container">
+				<div class="section__content">
+					<header class="section__header">
+						<h2 class="section__title">Преимущества</h2>
+						<div class="section__description">
+							<p>Link предназначен для фрилансеров, которым нужен простой способ планирования своего расписания</p>
+						</div>
+					</header>
+					<div class="section__body">
+						@@include('blocks/features.html')
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="product">
+			<div class="section__inner container">
+				<div class="section__content">
+					<header class="section__header">
+						<h2 class="section__title">Продукт</h2>
+						<div class="section__description">
+							<p>Мы уделяем особое внимание эргономике и стараемся соответствовать месту работы</p>
+						</div>
+					</header>
+					<div class="section__body">
+						@@include('blocks/product.html')
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="gallery">
+			<div class="section__inner container">
+				<div class="section__content">
+					<header class="section__header">
+						<h2 class="section__title">Галерея</h2>
+						<div class="section__description">
+							<p>Мы уделяем особое внимание эргономике и стараемся соответствовать месту работы</p>
+						</div>
+					</header>
+					<div class="section__body">
+						@@include('blocks/gallery.html')
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="partners">
+			<div class="section__inner container">
+				<div class="section__content">
+					<header class="section__header">
+						<h2 class="section__title">Партнеры</h2>
+						<div class="section__description">
+							<p>Мы уделяем особое внимание эргономике и стараемся соответствовать месту работы</p>
+						</div>
+					</header>
+					<div class="section__body">
+						@@include('blocks/partners.html')
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="reviews">
+			<div class="section__inner container container-reviews">
+				<div class="section__content">
+					<header class="section__header">
+						<h2 class="section__title">Отзывы</h2>
+					</header>
+					<div class="section__body">
+						@@include('blocks/reviews.html')
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-cta" id="cta">
+			<div class="section__inner container container-cta">
+				<div class="section-cta__content">
+
+					<header class="section__header section-cta__header">
+						<div class="section-cta__header-top">
+							<h2 class="section__title section-cta__title">Оставьте заявку на бетатест</h2>
+							<div class="section__description section-cta__description">
+								<p>Мы уделяем особое внимание эргономике и стараемся соответствовать месту работы</p>
+							</div>
+						</div>
+						<div class="section-cta__header-bottom">
+							<picture>
+								<source srcset="../img/contact-us/dashboard-375.webp" media="(max-width: 375px)" type="image/webp">
+								<source srcset="../img/contact-us/dashboard-375.png" media="(max-width: 375px)">
+
+								<source srcset="../img/contact-us/dashboard.webp" type="image/webp">
+								<img class="section-cta__image" src="../img/contact-us/dashboard.png" alt="Дашборд" width="1134" height="659">
+							</picture>
+						</div>
+					</header>
+					
+					<div class="section__body section-cta__body">
+						@@include('blocks/contact-us.html')
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	@@include('blocks/footer.html')
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

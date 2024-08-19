@@ -1,0 +1,29 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 4px;
+
+    &__label {
+        font-weight: 400;
+    }
+
+    &__input {
+        width: 100%;
+        height: var(--input-height);
+        padding-inline: 16px;
+        border-radius: var(--border-radius);
+        // color: var(--text-tertiary);
+        background-color: var(--bg-tertiary);
+
+        &::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        &--textarea {
+            height: 132px;
+            padding-block: 16px;
+            resize: none;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+
+.modal {
+  position: relative;
+  background-color: transparent;
+
+  @include mobile {
+    max-width: 100%;
+  }
+
+  &::backdrop {
+    background: rgba(15, 15, 15, 0.5);
+  }
+
+  &__container {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__inner {
+    position: relative;
+    width: 460px;
+    padding: 32px;
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius-large);
+    color: var(--text-primary);
+
+    @include mobile {
+      padding: 24px;
+    }
+  }
+
+  &__contant {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 400;
+  }
+
+  &__account-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+
+  &__buttons-container {
+  display: flex;
+  gap: 12px;
+  }
+
+  &__button {
+    width: 100%;
+    gap: 6px;
+    padding-block: 12px;
+  }
+
+  &__register-link {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  &__close-button {
+    @include mobile {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: var(--border-radius-large);
+    }
+  }
+}
+
+
+input[type = "password"] {
+    position: relative;
+}
+
+.field__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    top: 41px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }    
+
+.field-pwd {
+    position: relative;
+}
+
+.eye--checked .eye__icon-checked {
+  display: none;
+}
+
+.eye--checked .eye__icon-unchecked {
+  display: block;
+}
+
+.field__icon--eye:not(.eye--checked) .eye__icon-checked {
+  display: block;
+}
+
+.field__icon--eye:not(.eye--checked) .eye__icon-unchecked {
+  display: none;
+}

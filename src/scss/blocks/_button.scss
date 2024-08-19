@@ -1,0 +1,30 @@
+.button {
+  @include flex-center(true);
+
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--color-accent);
+
+  &:hover {
+    background-color: var(--color-btn-hover);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  &--transparent {
+    height: 48px;
+    border: var(--border);
+    background-color: transparent;
+    color: var(--text-primary);
+
+    &:hover {
+      background-color: var(--color-btn-tr-hover);
+    }
+  }
+}

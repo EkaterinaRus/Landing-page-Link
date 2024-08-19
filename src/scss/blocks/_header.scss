@@ -1,0 +1,85 @@
+.header {
+  background-color: var(--bg-primary);
+  z-index: 100;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+
+    @include pl {
+      column-gap: 8px;
+      --container-padding-x: 0px;
+    }
+  }
+
+  &__logo {
+    @include pl {
+      margin-left: 16px;
+    }
+  }
+
+  &__menu {
+    font-size: 16px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 32px;
+
+      @include tablet {
+        column-gap: 20px;
+      }
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 80px;
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-accent);
+        outline-offset: 2px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 0%;
+        height: 2px;
+        background-color: var(--color-accent);
+      }
+    }
+  }
+
+  &__menu-item {
+  }
+
+  &__button {
+    padding-inline: var(--btn-sm-padding-x);
+    padding-block: var(--btn-sm-padding-y);
+
+    @include desktop {
+      height: 46px;
+      padding-inline: 15px;
+    }
+
+    @include pl {
+      margin-left: auto;
+    }
+
+    @include pl {
+      height: 40px;
+      padding-inline: 16.5px;
+    }
+  }
+}

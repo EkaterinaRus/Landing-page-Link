@@ -1,0 +1,16 @@
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.container-cta {
+    max-width: var(--container-width);
+    padding-inline: 0;
+}
+
+.container-reviews {
+    @include mobile {
+        padding-right: 0;
+    }
+}

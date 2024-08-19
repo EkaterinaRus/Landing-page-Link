@@ -1,0 +1,10 @@
+.burger-button {
+    @include flex-center;
+    @include reset-button;
+    @include square(56px);
+
+    &:hover {
+        background-color: var(--color-btn-hover);
+    }
+}
+

@@ -1,0 +1,56 @@
+.product-card {
+    @include flex-center;
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 16px;
+    border-radius: var(--border-radius-large);
+    background-color: var(--bg-secondary);
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+
+    @include mobile {
+        gap: 32px;
+        padding-block: 32px;
+    }
+
+    &__header {
+        max-width: 366px;
+        @include flex-center;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+
+        @include mobile {
+            gap: 16px;
+        }
+    }
+
+    &__description {
+        text-align: center;
+    }
+
+    &__button {
+        padding-inline: var(--btn-sm-padding-x);
+        padding-block: var(--btn-sm-padding-y);
+    }
+
+    &__image-container {
+        @include flex-center;
+        width: auto;
+        height: 280px;
+
+        @include mobile {
+            width: 311px;
+            height: 210px;
+        }
+
+        &--boards {
+            @include mobile {
+                height: 226px;
+            }
+        }
+    }
+
+    &__image {
+
+    }
+}

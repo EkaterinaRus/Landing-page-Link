@@ -1,0 +1,29 @@
+.features-card {
+  position: relative;
+  padding-left: 48px;
+
+  @include mobile {
+     padding-left: 40px;
+  }
+
+  &__icon {
+    position: absolute;
+    @include square(32px);
+    top: 0;
+    left: 0;
+
+    @include mobile {
+      @include square(24px);
+    }
+  }
+
+  &__icon path {
+    fill: var(--icon-positive);
+  }
+  
+  &__header {
+    margin-bottom: 16px;
+  }
+
+}
+

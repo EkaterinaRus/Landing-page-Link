@@ -1,0 +1,107 @@
+.section {
+
+    &__inner {
+        padding-top: var(--section-padding-y);
+        padding-bottom: var(--section-padding-y);
+
+        @include desktop {
+            --section-padding-y: 100px;
+        }
+
+        @include tablet {
+            --section-padding-y: 80px;
+        }
+    }
+
+    &__inner--hero {
+        padding-bottom: 0;
+    }
+
+    &__header {
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        margin-bottom: clamp(24px, 5vw, 36px);
+        text-align: center;
+        font-size: clamp(36px, 5vw, 56px);
+    }
+
+    &__description {
+        max-width: 523px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: clamp(18px, 1.5vw, 20px);
+        color: var(--text-secondary);
+    }
+}
+
+.section-cta {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--bg-secondary);
+        border-radius: var(--border-radius-large);
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__header-top {
+        padding: 120px 96px 0px 120px;
+        margin-bottom: 63px;
+
+        @include desktop {
+            padding-inline: 30px;
+        }
+
+        @include tablet {
+            padding-top: 80px;
+        }
+
+        @include mobile {
+            padding-inline: 16px;
+            margin-bottom: 71px;
+        }
+
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        width: 50%;
+        background-color: var(--color-accent);
+        border-radius: var(--border-radius-large);
+        overflow: hidden;
+
+        @include mobile {
+            width: 100%;
+            padding: 63px 0px 0px 0px;
+        }
+    }
+
+    &__body {
+        width: 50%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        text-align: start;
+
+        @include mobile {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__description {
+        margin-inline: 0;
+        text-align: start;
+    }
+
+}

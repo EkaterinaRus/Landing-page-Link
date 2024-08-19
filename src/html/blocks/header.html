@@ -1,0 +1,39 @@
+<header class="header sticky">
+    <div class="header__inner container">
+      <a href="/" class="header__logo logo">
+        <img class="logo__image" src="./img/svgicons/logo.svg" alt="Link" width="153" height="48" loading="lazy" />
+      </a>
+      <nav class="header__menu hidden-mobile">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#features">Преимущества</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#product">Продукт</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#gallery">Галерея</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#partners">Партнеры</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#reviews">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button button button--transparent openModalLogin" type="button">Войти</button>
+      <button class="header__burger-menu burger-button visible-mobile" type="button" id="btnOpenMobileNav">
+        <span class="visually-hidden">Open navigation menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.09998 6.00004C2.09998 5.50298 2.50292 5.10004 2.99998 5.10004H21C21.497 5.10004 21.9 5.50298 21.9 6.00004C21.9 6.49709 21.497 6.90004 21 6.90004H2.99998C2.50292 6.90004 2.09998 6.49709 2.09998 6.00004Z" fill="black"/>
+            <path d="M2.09998 12C2.09998 11.503 2.50292 11.1 2.99998 11.1H21C21.497 11.1 21.9 11.503 21.9 12C21.9 12.4971 21.497 12.9 21 12.9H2.99998C2.50292 12.9 2.09998 12.4971 2.09998 12Z" fill="black"/>
+            <path d="M2.99998 17.1C2.50292 17.1 2.09998 17.503 2.09998 18C2.09998 18.4971 2.50292 18.9 2.99998 18.9L21 18.9C21.497 18.9 21.9 18.4971 21.9 18C21.9 17.503 21.497 17.1 21 17.1L2.99998 17.1Z" fill="black"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+@@include('mobile-nav.html')
+@@include('modal-review.html')
+@@include('modal-login.html')
+

@@ -1,0 +1,59 @@
+.contact-us {
+  padding: 120px 120px 120px 132px;
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-large);
+
+  @include desktop {
+    padding-inline: 30px;
+  }
+
+  @include tablet {
+    padding-block: 80px;
+    padding-inline: 16px;
+  }
+
+  @include mobile {
+    padding: 48px 16px;
+  }
+
+  &__form,
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @include mobile {
+      row-gap: 16px;
+    }
+  }
+
+  &__form {
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-tertiary);
+
+    &-link {
+      text-decoration: underline!important;
+      text-underline-offset: 2px;
+      &:focus-visible {
+        outline: 2px solid var(--color-accent);
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  &__button {
+    padding-block: var(--btn-sm-padding-y);
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+  }
+}

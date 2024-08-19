@@ -1,0 +1,27 @@
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+    &__emulator {
+      position: relative;
+      @include flex-center;
+      @include square(24px);
+    }
+  
+    &__icon-checked {
+      display: none;
+    }
+  
+    &__input:checked + .checkbox__emulator {
+      .checkbox__icon-unchecked {
+        display: none;
+      }
+  
+      .checkbox__icon-checked {
+        display: block;
+      }
+    }
+  }
+  

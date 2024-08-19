@@ -1,0 +1,16 @@
+.partners {
+    padding-block: 1px;
+    margin: 0 auto;
+
+    &__list {
+        // max-width: 910px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: clamp(32px, 5vw, 64px);
+    }
+
+    &__item {
+    }
+}
