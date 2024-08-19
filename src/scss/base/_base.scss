@@ -74,6 +74,10 @@ main {
   color: var(--text-secondary);
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .link-accent {
   color: var(--color-accent);
   &:focus-visible {
