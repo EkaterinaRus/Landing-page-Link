@@ -145,9 +145,17 @@
         text-underline-offset: 0;
       }
     }
+
     &:focus-visible {
       outline: 2px solid var(--color-accent);
       outline-offset: 2px;
+
+      @include mobile {
+        background: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+        text-underline-offset: 0;
+        outline: none;
+      }
     }
   }
 
@@ -194,6 +202,13 @@
 
     @include mobile {
       padding: 8px 16px;
+
+      &:focus-visible {
+        background: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+        text-underline-offset: 0;
+        outline: none;
+      }
     }
   }
 
@@ -283,6 +298,7 @@
           background: rgba(255, 255, 255, 0.2);
           text-decoration: none;
           text-underline-offset: 0;
+          outline: none;
         }
       }
 
