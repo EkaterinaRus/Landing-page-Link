@@ -18,6 +18,15 @@
       outline: 2px solid var(--color-accent);
       outline-offset: 2px;
     }
+
+    @include mobile {
+      &:focus-visible svg path {
+        fill: var(--color-accent);
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
   }
 
   &__svg {

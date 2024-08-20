@@ -5,5 +5,9 @@
   }
   @include mobile {
     max-width: 102px;
+
+    &:focus-visible {
+      outline: none;
+    }
   }
 }

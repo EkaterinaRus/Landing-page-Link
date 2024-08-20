@@ -44,6 +44,12 @@
 		&:hover {
 			background-color: var(--color-btn-tr-hover);
 		}
+
+		&:focus-visible {
+			outline: none;
+			background-color: var(--color-btn-tr-hover);
+		}
+
     }
 	&__socials-list {
 		padding-left: 16px;
