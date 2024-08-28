@@ -21,7 +21,7 @@ gulp docs
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="45" height="45"/>&nbsp;  
   <img src="https://simpleicons.org/icons/bem.svg" title="BEM" alt="BEM" width="45" height="45"/>&nbsp; 
   <img src="https://github.com/devicons/devicon/blob/master/icons/gulp/gulp-plain.svg" title="Gulp" alt="Gulp" width="45" height="45"/>&nbsp;
-  <img src="https://simpleicons.org/icons/sass-color.svg" title="SCSS" alt="SCSS" width="45" height="45"/>&nbsp;
+  <img src="https://simpleicons.org/icons/sass.svg" title="SCSS" alt="SCSS" width="45" height="45"/>&nbsp;
 </div>
 
 ### Contacts
